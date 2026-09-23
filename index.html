@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: #fff;
+}
+
+/* TOP BAR */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 65px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff9d00;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MENU */
+.menu {
+  display: none;
+  position: sticky;
+  top: 65px;
+  z-index: 999;
+  background: #151515;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.menu.show {
+  display: block;
+}
+
+.menu a {
+  display: block;
+  padding: 13px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.menu a:hover {
+  background: #252525;
+  color: #ff9d00;
+}
+
+/* HERO */
+.hero {
+  min-height: 650px;
+  padding: 70px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at top, #3b2200 0%, #120b00 35%, #080808 75%);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid #ff9d00;
+  border-radius: 30px;
+  color: #ffb52e;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 12vw, 80px);
+  line-height: 0.95;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.hero h1 span {
+  color: #ff9d00;
+}
+
+.hero p {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* COUNTDOWN */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.countdown div {
+  width: 75px;
+  padding: 12px 5px;
+  background: #151515;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.countdown b {
+  display: block;
+  font-size: 25px;
+  color: #ff9d00;
+}
+
+.countdown small {
+  color: #aaa;
+}
+
+/* BUTTON */
+.main-btn {
+  border: none;
+  background: #ff9d00;
+  color: #111;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.main-btn:hover {
+  transform: scale(1.03);
+  background: #ffb52e;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 700px;
+  margin: auto;
+  padding: 65px 20px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.sub {
+  text-align: center;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+form {
+  background: #111;
+  padding: 20px;
+  border: 1px solid #292929;
+  border-radius: 15px;
+}
+
+form h3 {
+  margin: 20px 0 12px;
+  color: #ff9d00;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 13px;
+  border: 1px solid #333;
+  background: #191919;
+  color: white;
+  border-radius: 9px;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #ff9d00;
+}
+
+form .main-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* CARDS */
+.info-card {
+  padding: 25px;
+  margin-top: 18px;
+  background: #111;
+  border: 1px solid #292929;
+  border-radius: 15px;
+}
+
+.info-card h3 {
+  color: #ff9d00;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.final {
+  text-align: center;
+  border-color: #ff9d00;
+}
+
+.final strong {
+  display: block;
+  margin-top: 12px;
+  font-size: 22px;
+}
+
+/* LEADERBOARD */
+.table {
+  overflow: hidden;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  background: #111;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 45px 1fr 60px 70px;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #292929;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.header {
+  background: #ff9d00;
+  color: #111;
+  font-weight: bold;
+}
+
+/* SUCCESS */
+.success {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #123d1d;
+  border: 1px solid #277a3b;
+  color: #72e58c;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px 20px;
+  text-align: center;
+  background: #111;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* MOBILE */
+@media (max-width: 420px) {
+  .countdown div {
+    width: 65px;
+  }
+
+  .countdown {
+    gap: 5px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+}
